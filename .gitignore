@@ -1,29 +1,41 @@
-### IntelliJ IDEA ###
+# ---- 构建产物 ----
+target/
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+build/
+*.war
+*.jar
+!src/main/webapp/WEB-INF/lib/*.jar
 
-### Eclipse ###
-.apt_generated
+# ---- IntelliJ IDEA ----
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ---- Eclipse / NetBeans ----
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
+.settings/
+.apt_generated
+.factorypath
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# ---- VS Code ----
 .vscode/
 
-### Mac OS ###
+# ---- 日志 / 临时文件 ----
+*.log
+logs/
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# ---- 系统文件 ----
 .DS_Store
+Thumbs.db
+desktop.ini
